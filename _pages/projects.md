@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Few projects of mine. See my github profile for more details. 
 nav: true
 display_categories: [work, fun]
 horizontal: false
