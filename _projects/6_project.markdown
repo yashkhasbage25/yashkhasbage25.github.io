@@ -1,78 +1,65 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Course Projects
+description: A short description of Course Projects I did in B.Tech. CSE curriculum at IIT-H
+img: https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Indian_Institute_of_Technology_Hyderabad_logo.svg/1200px-Indian_Institute_of_Technology_Hyderabad_logo.svg.png
+importance: 2
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+I did several projects in the B.Tech. Curriculum of CSE@IITH. I will describe a few here. Most of them are open-sourced on my Github page. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## COOL-Compiler
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Course: Compilers-II
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+COOL stands for Classroom-Object-Oriented-Language. As the name shows, it is object orientied and is especially made for classroom learning activities. 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+We were given some base code of the backend and had to complete its parts to form a full fledged compilers. 
 
+We also created its front end in the Compilers-I, but this was not incorporated into the project of Compilers-II.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+[link](https://github.com/yashkhasbage25/COOL-compiler)
 
+## NodeRunner
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Course: PoPL-II
 
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+Node runner is a multi-player version of the classic LodeRunner game. We used the channels and locks in Golang to process the backend of game in a safe and secure way. Multithreading was the main focus of this project. 
+
+[link](https://github.com/yashkhasbage25/NodeRunner)
+
+## FELIX Interpreter
+
+<img src="https://github.com/yashkhasbage25/FELIX-interpreter/raw/master/imgs/felix.png" alt="FELIX logo" title="FELIX logo">
+
+Haskell is quite different from languages like C/C++/Python/Java/Javascript. 
+
+Haskell belongs to the domain of functional programming. If you are new to it, you will feel it a lot difficult unless you are clear with its basic constructs. 
+
+FELIX (yeah we created that logo with GIMP 🤣!) is a dummy javascript like programming language, and we implemented an interpreter for it in Haskell. We used several frontend compiler libraries and used simple logic for backend. 
+
+[link](https://github.com/yashkhasbage25/FELIX-interpreter)
+
+## playAtKey
+
+It is a simple tkinter python app that can be used to play keyboard, guitar and drums on your laptop. We found that drums were the best to play with. 
+
+[link](https://github.com/yashkhasbage25/playAtKey)
+
+## Quode-IDE
+
+It was a simple text editor in python and tkinter. Apart from standard code editor features, it supported almost 50+ programming languages. 
+
+[link](https://github.com/yashkhasbage25/Quode-IDE)
+
+## Conference Management System
+
+We also implemented a Conference Management System using Django. It belonged to course: Software Engineering. We had quite big code base, with features of a standard conference-management-system. However, with the rise of 2nd COVID wave in India, our semester was quickly wrapped up and the project could not be purused later. We were near to completion and testing was remaining. 
+
+Since corona subdued the project, we named it `Kerona`.
+
+## Many other projects
+
+There are many other projects that are not being mentioned here. For example, we created played with several networking softwares like Software Defined Networks in our Networks course. 
+

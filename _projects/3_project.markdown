@@ -1,14 +1,39 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: /assets/img/7.jpg
-redirect: https://unsplash.com
+title: Winning the Hackathon
+description: I'm beside you organized a Hackathon at IITH
+img: https://static.wixstatic.com/media/be8e7d_ef9950f8f3fc40358cbb21ea025d1412~mv2.png/v1/fill/w_690,h_454,al_c,q_85,usm_0.66_1.00_0.01/%E6%96%B0%E5%9B%B3%E8%A7%A3%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99.webp
+# redirect: https://unsplash.com
 importance: 3
-category: work
+category: fun
 ---
 
-Every project has a beautiful feature showcase page.
+[https://www.imbesideyou.com/english](I'm beside you) organized at IIT-Hyderabad. Almost 50 teams participated in the hackathon. 
+
+
+***
+
+
+The task was to classify face images as Smile, No-Smile and Fake-Smile. I participated as a team with one of my friends - Puneet Mangla. The task was difficult, hence we structed our approach as a culmination of several components. The components were:
+
+<ul>
+    <li> A task specific modification to input </li>
+    <li> Using newer optimization methods </li>
+    <li> Recent augmentation methods </li>
+    <li> Countering class imbalance with over-sampling </li>
+</ul>
+
+Many more components could have been tried if the time was more. 
+
+
+***
+Finally, we won the Grand Cash Prize of ₹ 25K. 
+
+
+It was a great experience, with quite unexpected prize. Hope to see `I' m beside you` at IIT-H again with another hackathon. 
+
+
+<!-- Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
@@ -76,4 +101,4 @@ Here's the code for the last row of images above:
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-```
+``` -->

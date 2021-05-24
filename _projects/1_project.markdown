@@ -1,26 +1,57 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: The AAAI-2021 Paper
+description: My first acacdmic paper
+img: https://wikimedia.org/api/rest_v1/media/math/render/svg/d2b255c49df2a6e084b9196ab71a68872a739ead
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Too long story. I will summarize it in few points. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+* It was quite long effort after several failures. 
+
+* The work almost went for 3 semesters. 
+
+* Semester 1 was quite heavy and sincere work. Heavy brain storming with Prof. Vineeth, Ravi and Rahul.
+
+* We brought the paper to a good level and submitted it to IJCAI. 
+
+* It did not get through. 
+
+* Sem 1 + 1/2 finishes.
+
+* We improved it further and submitted it to CIKM. 
+
+* CIKM could not accept it as it had no appropriate reviewers for the topic. 
+
+* Semester 2 + summer finishes.
+
+* We improved it further.
+
+* Submitted it to AAAI-2021.
+
+* Finally got it accepted before the end of semester 3. 
+
+Here are details to the paper:
 
     ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
+    Authors: Adepu Ravi Shankar, Yash Khasbage, Rahul Vigneswaran, Vineeth N Balasubramanian
+    Title: A Deeper Look at the Hessian Eigenspectrum of Deep Neural Networks and its Applications to Regularization
+    Link: https://arxiv.org/abs/2012.03801
+    Code: https://github.com/yashkhasbage25/HTR
     ---
 
-<div class="row">
+I am grateful to Ravi for sharing the first author with me. Learned a lot from him!!!
+
+<!-- ---
+layout: page
+title: project
+description: a project with a background image
+img: /assets/img/12.jpg
+--- -->
+
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
     </div>
@@ -75,4 +106,4 @@ Here's the code for the last row of images above:
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-```
+``` -->
