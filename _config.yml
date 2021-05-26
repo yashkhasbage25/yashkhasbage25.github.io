@@ -68,8 +68,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: My interests  # your blog must have a name for it to show up in the nav bar
-blog_description: My interests lie at the two ends of time. Deep Learning and Sanskrit. 
+blog_name: Blogs  # your blog must have a name for it to show up in the nav bar
+blog_description: A few blogs...
 permalink: /blog/:year/:title/
 
 # Pagination
