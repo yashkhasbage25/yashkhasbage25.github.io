@@ -7,42 +7,37 @@ importance: 1
 category: work
 ---
 
-Too long story. I will summarize it in few points. 
-
-* It was quite long effort after several failures. 
-
-* The work almost went for 3 semesters. 
-
-* Semester 1 was quite heavy and sincere work. Heavy brain storming with Prof. Vineeth, Ravi and Rahul.
-
-* We brought the paper to a good level and submitted it to IJCAI. 
-
-* It did not get through. 
-
-* Sem 1 + 1/2 finishes.
-
-* We improved it further and submitted it to CIKM. 
-
-* CIKM could not accept it as it had no appropriate reviewers for the topic. 
-
-* Semester 2 + summer finishes.
-
-* We improved it further.
-
-* Submitted it to AAAI-2021.
-
-* Finally got it accepted before the end of semester 3. 
-
-Here are details to the paper:
+Glad to share my paper accepted at AAAI-2021. 
 
     ---
-    Authors: Adepu Ravi Shankar, Yash Khasbage, Rahul Vigneswaran, Vineeth N Balasubramanian
+    Authors: Adepu Ravi Shankar*, Yash Khasbage*, Rahul Vigneswaran, Vineeth N Balasubramanian
     Title: A Deeper Look at the Hessian Eigenspectrum of Deep Neural Networks and its Applications to Regularization
     Link: https://arxiv.org/abs/2012.03801
     Code: https://github.com/yashkhasbage25/HTR
     ---
 
-I am grateful to Ravi for sharing the first author with me. Learned a lot from him!!!
+Here, I will summarize our paper. 
+
+* How to study hessians? 
+Hessian eigenvalues are the most hunted quantity. But computing them for deep neural networks in painstaking. Recent papers have used the eigen spectrums of hessians for studying them. What are eigenspectrums? They show the probability of an eigenvalue at location `$\lambda$`. Thus, we get a rough estimate of the location of eigenvalues. The numerical computation method that gives the eigenspectrum, gives only the higher eigenspectrum. The algorithm, called as `Lanczos algorithm` accepts the number of eigenvalues to study and it gives you eigenspectrums involving those many eigenvalues. 
+
+
+* Earlier papers, discussed the descomposition Hess = H + G. This is technically known as Gauss-Newton decomposition. Earlier papers pointed that Hess and G had almost similar eigenspectrum in some epochs of training. 
+
+* `$Hess$` was also found to have exactly C number of outliers, where C = number of classes in classification. 
+
+* In this paper, we take a entirely new perspective of this observation by studying the model at layers. We bring up layer hessians and try relating them with full-network hessian. From now, I will address hessian of full network as full-hessian. 
+
+* We first observe that each of `$Hess_l$` has almost C outliers and `$G_l$` are similar to `$Hess_l$`. Thus, something that happened for full network, also happened for individual layer. 
+
+* Now, we can ask which layer is most similar to full-hessian. We have the eigenspectrums for comparing. 
+Thus, converting the spectrums to probability distribution, we can find the distance between them using KL-divergence or wasserstein distance. 
+We found that, middle layers are most similar to full-hessian. 
+
+* Later, observing the lower trace of better generalizing networks, we claimed that less trace implies better generalization. Hence, we penalize the trace of neural networks using the Hutchington's trace computation method. We found that penlizing trace does improve generalization.
+
+* If middle layers are most similar to full network, can penalizing middle layers cause penalizing full network? Trying this, we found that it worked much better in some networks. This motivates the use of layer-specific regularizers for efficient computations. 
+
 
 <!-- ---
 layout: page

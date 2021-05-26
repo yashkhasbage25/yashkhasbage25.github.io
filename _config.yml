@@ -92,6 +92,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  mudgala: 
+    defaults: 
+      layouts: post
+    output: true
+    permalink: /mudgala/:path/
 
 news_limit: 5
 
