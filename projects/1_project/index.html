@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Yash Khasbage | Yash Khasbage</title>
+<title>Yash Khasbage | The AAAI-2021 Paper</title>
 <meta name="description" content="Hi! I am an undergrad student at IIT Hyderabad.
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/1_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -96,7 +96,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -168,58 +168,119 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Blogs</h1>
-    <h2>A few blogs...</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">The AAAI-2021 Paper</h1>
+    <p class="post-description">My first acacdmic paper</p>
+  </header>
+
+  <article>
+    <p>Glad to share my paper accepted at AAAI-2021.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+Authors: Adepu Ravi Shankar*, Yash Khasbage*, Rahul Vigneswaran, Vineeth N Balasubramanian
+Title: A Deeper Look at the Hessian Eigenspectrum of Deep Neural Networks and its Applications to Regularization
+Link: https://arxiv.org/abs/2012.03801
+Code: https://github.com/yashkhasbage25/HTR
+---
+</code></pre></div></div>
+
+<p>Here, I will summarize our paper.</p>
+
+<ul>
+  <li>
+    <p>How to study hessians? <br />
+Hessian eigenvalues are the most hunted quantity. But computing them for deep neural networks in painstaking. Recent papers have used the eigen spectrums of hessians for studying them. What are eigenspectrums? They show the probability of an eigenvalue at location <code class="language-plaintext highlighter-rouge">$\lambda$</code>. Thus, we get a rough estimate of the location of eigenvalues. The numerical computation method that gives the eigenspectrum, gives only the higher eigenspectrum. The algorithm, called as <code class="language-plaintext highlighter-rouge">Lanczos algorithm</code> accepts the number of eigenvalues to study and it gives you eigenspectrums involving those many eigenvalues.</p>
+  </li>
+  <li>
+    <p>Earlier papers, discussed the descomposition Hess = H + G. This is technically known as Gauss-Newton decomposition. Earlier papers pointed that Hess and G had almost similar eigenspectrum in some epochs of training.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">$Hess$</code> was also found to have exactly C number of outliers, where C = number of classes in classification.</p>
+  </li>
+  <li>
+    <p>In this paper, we take a entirely new perspective of this observation by studying the model at layers. We bring up layer hessians and try relating them with full-network hessian. From now, I will address hessian of full network as full-hessian.</p>
+  </li>
+  <li>
+    <p>We first observe that each of <code class="language-plaintext highlighter-rouge">$Hess_l$</code> has almost C outliers and <code class="language-plaintext highlighter-rouge">$G_l$</code> are similar to <code class="language-plaintext highlighter-rouge">$Hess_l$</code>. Thus, something that happened for full network, also happened for individual layer.</p>
+  </li>
+  <li>
+    <p>Now, we can ask which layer is most similar to full-hessian. We have the eigenspectrums for comparing. <br />
+Thus, converting the spectrums to probability distribution, we can find the distance between them using KL-divergence or wasserstein distance. <br />
+We found that, middle layers are most similar to full-hessian.</p>
+  </li>
+  <li>
+    <p>Later, observing the lower trace of better generalizing networks, we claimed that less trace implies better generalization. Hence, we penalize the trace of neural networks using the Hutchington’s trace computation method. We found that penlizing trace does improve generalization.</p>
+  </li>
+  <li>
+    <p>If middle layers are most similar to full network, can penalizing middle layers cause penalizing full network? Trying this, we found that it worked much better in some networks. This motivates the use of layer-specific regularizers for efficient computations.</p>
+  </li>
+</ul>
+
+<!-- ---
+layout: page
+title: project
+description: a project with a background image
+img: /assets/img/12.jpg
+--- -->
+
+<!-- <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/1.jpg" alt="" title="example image"/>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/3.jpg" alt="" title="example image"/>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/5.jpg" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/5.jpg" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/first-academic-paper/">Paper in AAAI-2021</a></h3>
-        <p class="post-meta">December 2, 2020</p>
-        <p>Informal blog about my first academic paper</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="Yash Khasbage">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="Yash Khasbage - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="Yash Khasbage - page 3">3</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/4/index.html" title="Yash Khasbage - page 4">4</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/6.jpg" alt="" title="example image"/>
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/11.jpg" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
 
 
+The code is simple.
+Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
+To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
+Here's the code for the last row of images above:
+
+```html
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/6.jpg" alt="" title="example image"/>
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/11.jpg" alt="" title="example image"/>
+    </div>
+</div>
+``` -->
+
+  </article>
 
 </div>
 
